@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.masthead {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg_login.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.container a {
+  color: antiquewhite !important;
+}
+.header {
+  color: antiquewhite !important;
+}
+.header-section {
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.navbar_section {
+  background-color: #f7cb7b;
+}
+.header-section-about {
+  width: 100%;
+  height: auto;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+.masthead-about {
+  background-color: #ffc074;
+  padding-top: calc(2rem + 70px);
+  padding-bottom: 6rem;
+}
+.header-section-jenis {
+  width: 100%;
+  height: auto;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+/* .masthead-jenis{
+    background-color: #FFC074;
+    padding-top: calc(1rem + 0px);
+    padding-bottom: 1rem;
+} */
+.header-section-teknik {
+  width: 100%;
+  height: auto;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+.header-section-tutorial {
+  width: 100%;
+  height: auto;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+.masthead-saran {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg_login.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
