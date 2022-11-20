@@ -57,7 +57,7 @@ $id_mbl = $_GET['id_mbl'];
                 <a class="nav-link" href="../">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../">Motor</a>
+                <a class="nav-link" href="../motor/">Motor</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../mobil/">Mobil</a>
@@ -81,7 +81,7 @@ $id_mbl = $_GET['id_mbl'];
             src="../img/mobil/<?php echo $p['gambar_mbl'] ?>"
             class="rounded shadow"
             alt="..."
-            style="width: 600px; height: 500px; object-fit: cover"
+            style="width: 600px; height: 500px; object-fit: contain"
           />
         </div>
         <div class="col-xl-6">
@@ -104,6 +104,10 @@ $id_mbl = $_GET['id_mbl'];
                 <tr>
                   <th>Kapasitas Baterai :</th>
                   <td><h5><?php echo $p['baterai_mbl'] ?></h5></td>
+                </tr>
+                <tr>
+                  <th>Jarak Tempuh :</th>
+                  <td><h5><?php echo $p['jt_mbl'] ?></h5></td>
                 </tr>
                 <tr>
                   <th>Daya :</th>

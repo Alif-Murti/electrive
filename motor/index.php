@@ -79,6 +79,7 @@ include "../koneksi.php"
         />
       </div>
       <!-- banner -->
+      <h1 class="text-center mt-2">Temukan Motor Listrik Favoritmu</h1>
       <!-- search bar -->
       <div class="mx-5 mx-md-banner mt-5">
         <div class="input-group mb-3">
@@ -104,7 +105,7 @@ include "../koneksi.php"
               while($p=mysqli_fetch_array($profile)){
                   ?>
             <div class="col-md-3">
-            <div class="card mb-3 motor_listrik" style="width: 18rem">
+            <div class="card mb-3 motor_listrik" style="width: 18rem;height:32rem">
               <img
                 src="../img/motor/<?php echo $p['gambar_mtr'] ?>"
                 class="card-img-top mx-auto mt-3"
@@ -114,8 +115,10 @@ include "../koneksi.php"
               <div class="card-body">
                 <h4 class="card-title"><?php echo $p['tipe_mtr'] ?></h4>
                 <h6><?php echo $p['merek_mtr'] ?></h6>
-                <p class="card-text"><?php echo substr_replace($p['desk_mtr'],"...",100); ?></p>
-                <a href="motorpilih.php?id_mtr=<?php echo $p['id_mtr'] ?>" class="btn btn-primary">Lihat lebih lanjut</a>
+                <p class="card-text"><?php echo substr_replace($p['desk_mtr'],"...",90); ?></p>
+                <div class="card-footer text-center mt-1">
+                  <a href="motorpilih.php?id_mtr=<?php echo $p['id_mtr'] ?>" class="btn btn-primary">Lihat lebih lanjut</a>
+                </div>
               </div>
             </div>
           </div>

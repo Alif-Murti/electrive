@@ -81,7 +81,7 @@ include "../koneksi.php"
       <!-- banner -->
       <!-- search bar -->
       <div class="mx-5 mx-md-banner mt-5">
-        <h3 class="text-start">Temukan Charging Station Terdekat di Kotamu</h3>
+        <h3 class="text-center mb-5">Temukan Charging Station Terdekat di Kotamu</h3>
         <div class="mx-auto">
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1"
@@ -102,18 +102,22 @@ include "../koneksi.php"
       <!-- search bar -->
       <!-- card produk mobil -->
       <div class="mx-5 my-5">
-        <div class="row justify-content-start gx-3">
+        <div class="row justify-content-start gx-3 my-auto">
           <?php
               $profile=mysqli_query($conn,"SELECT * from spklu");
               while($p=mysqli_fetch_array($profile)){
             ?>
         <div class="col-md-3">
-                <div class="card mb-3 spklu" style="width: 18rem">
+                <div class="card mb-3 spklu" style="width: 18rem;height:22rem">
             <div class="card-body">
-              <h4 class="card-title"><?php echo $p['nama_spklu'] ?></h4>
-              <h6 class="card-text"><?php echo $p['kota'] ?></h6>
-              <p class="card-text"><?php echo $p['alamat'] ?></p>
-              <a href="spklupilih.php?id_spklu=<?php echo $p['id_spklu'] ?>" class="btn btn-primary">Lihat di Maps</a>
+              <div>
+              <h4 class="card-title mb-3"><?php echo $p['nama_spklu'] ?></h4>
+              <h6 class="card-text mb-3"><?php echo $p['kota'] ?></h6>
+              <p class="card-text mb-3"><?php echo substr_replace($p['alamat'],"...",90); ?></p>
+              </div>
+              <div class="text-center">
+                <a href="spklupilih.php?id_spklu=<?php echo $p['id_spklu'] ?>" class="btn btn-primary">Lihat di Maps</a>
+              </div>
             </div>
         </div>
         </div>

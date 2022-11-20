@@ -62,12 +62,13 @@
         $gambar = upload(); 
         $kapasitas = $_POST['kapasitas_mbl'];
         $baterai = $_POST['baterai_mbl'];
+        $jt_mbl = $_POST['jt_mbl'];
         $daya = $_POST['daya_mbl'];
         $torsi = $_POST['torsi_mbl'];
         $harga = $_POST['harga_mbl'];
         $deskripsi = $_POST['desk_mbl'];
 			  
-		$tambahmobil = mysqli_query($conn,"insert into mobil values('','$merek','$tipe','$jenis','$gambar','$kapasitas',' $baterai','$daya','$torsi','$harga','$deskripsi')");
+		$tambahmobil = mysqli_query($conn,"insert into mobil values('','$merek','$tipe','$jenis','$gambar','$kapasitas',' $baterai','$jt_mbl','$daya','$torsi','$harga','$deskripsi')");
 		if ($tambahmobil){
 		echo " <div class='alert alert-success'>
 			Berhasil menambahkan Artikel baru.
@@ -87,6 +88,7 @@ echo mysqli_error($conn);
         $gambarlama = $_POST['gambarlama'];
         $kapasitas = $_POST['kapasitas_mbl'];
         $baterai = $_POST['baterai_mbl'];
+        $jt_mbl = $_POST['jt_mbl'];
         $daya = $_POST['daya_mbl'];
         $torsi = $_POST['torsi_mbl'];
         $harga = $_POST['harga_mbl'];
@@ -105,6 +107,7 @@ echo mysqli_error($conn);
                                         gambar_mbl='$gambar',
                                         kapasitas_mbl='$kapasitas',
                                         baterai_mbl='$baterai',
+                                        jt_mbl='$jt_mbl',
                                         daya_mbl='$daya',
                                         torsi_mbl='$torsi',
                                         harga_mbl='$harga',
@@ -133,7 +136,7 @@ echo mysqli_error($conn);
       type="image/png" 
       href="../favicon.png">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Halaman Alat</title>
+    <title>Halaman Mobil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -248,13 +251,14 @@ echo mysqli_error($conn);
                                                 <th>Gambar</th>
                                                 <th>Tangki</th>
                                                 <th>Baterai</th>
+                                                <th>Jarak Tempuh</th>
                                                 <th>Daya</th>
                                                 <th>Torsi</th>
                                                 <th>Harga</th>
                                                 <th>Deskripsi</th>
 											</tr></thead><tbody>
 											<?php 
-											$brgs=mysqli_query($conn,"SELECT id_mbl, merek_mbl, tipe_mbl, jenis_mbl, gambar_mbl, kapasitas_mbl, baterai_mbl, daya_mbl, torsi_mbl, harga_mbl, desk_mbl FROM mobil;");
+											$brgs=mysqli_query($conn,"SELECT id_mbl, merek_mbl, tipe_mbl, jenis_mbl, gambar_mbl, kapasitas_mbl, baterai_mbl, jt_mbl, daya_mbl, torsi_mbl, harga_mbl, desk_mbl FROM mobil;");
 											$no=1;
 											while($p=mysqli_fetch_array($brgs)){
 
@@ -270,6 +274,7 @@ echo mysqli_error($conn);
                                                     <td><img src="../img/mobil/<?php echo $p['gambar_mbl']?>" alt="" width="100" height="100"></td>
 													<td><?php echo $p['kapasitas_mbl'] ?></td>
                                                     <td><?php echo $p['baterai_mbl'] ?></td>
+                                                    <td><?php echo $p['jt_mbl'] ?></td>
                                                     <td><?php echo $p['daya_mbl'] ?></td>
                                                     <td><?php echo $p['torsi_mbl'] ?></td>
                                                     <td><?php echo $p['harga_mbl'] ?></td>
@@ -338,6 +343,10 @@ echo mysqli_error($conn);
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Kapasitas Baterai</label>
                     <input type="text" name="baterai_mbl" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Jarak Tempuh</label>
+                    <input type="text" name="jt_mbl" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Daya Mobil</label>

@@ -330,11 +330,11 @@ echo mysqli_error($conn);
                     <input type="text" name="jt_mtr" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Harga Mobil</label>
+                    <label for="exampleInputPassword1" class="form-label">Harga</label>
                     <input type="text" name="harga_mtr" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Deskripsi Mobil</label>
+                    <label for="exampleInputPassword1" class="form-label">Deskripsi</label>
                     <input type="text" name="desk_mtr" class="form-control" id="exampleInputPassword1">
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>

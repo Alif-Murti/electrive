@@ -57,7 +57,7 @@ $id_mtr = $_GET['id_mtr'];
                 <a class="nav-link" href="../">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../">Motor</a>
+                <a class="nav-link" href="../motor/">Motor</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../mobil/">Mobil</a>

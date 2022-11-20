@@ -161,7 +161,7 @@ echo mysqli_error($conn);
                 dilihat oleh publik
               </p>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
+                <label for="exampleInputEmail1" class="form-label fw-bold"
                   >Nama Jasa Kamu</label
                 >
                 <input
@@ -173,7 +173,7 @@ echo mysqli_error($conn);
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
+                <label for="exampleInputPassword1" class="form-label fw-bold"
                   >Nama Penyedia</label
                 >
                 <input
@@ -184,11 +184,11 @@ echo mysqli_error($conn);
                 />
               </div>
               <div class="mb-3">
-                <label for="gambar">Gambar Promosi Jasamu</label><br />
+                <label for="gambar" class="form-label fw-bold">Gambar Promosi Jasamu</label><br />
                 <input type="file" name="gambar_jasa" id="gambar" required />
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
+                <label for="exampleInputPassword1" class="form-label fw-bold"
                   >Alamat Bengkel / Workshop</label
                 >
                 <input
@@ -199,7 +199,7 @@ echo mysqli_error($conn);
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
+                <label for="exampleInputPassword1" class="form-label fw-bold"
                   >No Telpon </label
                 >
                 <input
@@ -210,7 +210,7 @@ echo mysqli_error($conn);
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
+                <label for="exampleInputPassword1" class="form-label fw-bold"
                   >Deskripsikan Jasa Kamu</label
                 >
                 <textarea
@@ -247,33 +247,37 @@ echo mysqli_error($conn);
         </p>
         <div class="collapse" id="collapseExample">
           <div>
-            <!-- card jasa -->
-            <div class="card mb-3" style="max-width: 540px">
-              <div class="row g-0">
-                <?php
+      <!-- card jasa -->
+      <div class="mx-5 my-5">
+        <div class="row justify-content-start gx-3">
+          <?php
               $profile=mysqli_query($conn,"SELECT * from jasa where status_jasa=1");
               while($p=mysqli_fetch_array($profile)){
                   ?>
-                <div class="col-md-4">
-                  <img
-                    src="../img/jasa/<?php echo $p['gambar_jasa'] ?>"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
+          <div class="col-md-4 col-lg-3">
+            <div class="card mb-3 mobil_listrik font-membesar" style="width: 18rem; height:30rem">
+              <img
+                src="../img/jasa/<?php echo $p['gambar_jasa'] ?>"
+                class="card-img-top mx-auto mt-3"
+                style="width: 250px; height: 250px; object-fit: cover"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title"><?php echo $p['nama_jasa'] ?></h4>
+                <h6><?php echo $p['penyedia_jasa'] ?></h6>
+                <p class="card-text"><?php echo substr_replace($p['desk_jasa'],"...",100); ?></p>
+                <div class="card-footer text-center">
+                <a href="jasapilih.php?id_jasa=<?php echo $p['id_jasa'] ?>" class="btn btn-primary glow-on-hover">Lihat lebih lanjut</a>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo $p['penyedia_jasa'] ?></h5>
-                    <p class="card-text"><?php echo substr_replace($p['desk_jasa'],"...",100); ?></p>
-                    <a href="jasapilih.php?id_jasa=<?php echo $p['id_jasa'] ?>" class="btn btn-primary">Lihat Penawaran Jasa</a>
-                  </div>
-                </div>
-                <?php
-              }
-           ?>
               </div>
             </div>
-            <!-- card jasa -->
+          </div>        
+          <?php
+              }
+           ?>
+        </div>
+      </div>
+      <!-- card jasa -->
           </div>
         </div>
       </div>

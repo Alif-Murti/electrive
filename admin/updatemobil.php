@@ -45,6 +45,10 @@ if($_POST['id_mbl']){
                     <input type="text" name="baterai_mbl" class="form-control" id="exampleInputPassword1" value="<?php echo $update['baterai_mbl'] ?>">
                 </div>
                 <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Jarak Tempuh</label>
+                    <input type="text" name="jt_mbl" class="form-control" id="exampleInputPassword1" value="<?php echo $update['jt_mbl'] ?>">
+                </div>
+                <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Daya</label>
                     <input type="text" name="daya_mbl" class="form-control" id="exampleInputPassword1" value="<?php echo $update['daya_mbl'] ?>">
                 </div>

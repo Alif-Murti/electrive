@@ -79,6 +79,7 @@ include "../koneksi.php"
         />
       </div>
       <!-- banner -->
+      <h1 class="text-center mt-2">Temukan Mobil Listrik Favoritmu</h1>
       <!-- search bar -->
       <div class="mx-5 mx-md-banner mt-5">
         <div class="input-group mb-3">
@@ -103,8 +104,8 @@ include "../koneksi.php"
               $profile=mysqli_query($conn,"SELECT * from mobil");
               while($p=mysqli_fetch_array($profile)){
                   ?>
-          <div class="col-md-3">
-            <div class="card mb-3 mobil_listrik" style="width: 18rem">
+          <div class="col-md-4 col-lg-3">
+            <div class="card mb-3 mobil_listrik font-membesar" style="width: 18rem; height:30rem">
               <img
                 src="../img/mobil/<?php echo $p['gambar_mbl'] ?>"
                 class="card-img-top mx-auto mt-3"
@@ -115,7 +116,9 @@ include "../koneksi.php"
                 <h4 class="card-title"><?php echo $p['tipe_mbl'] ?></h4>
                 <h6><?php echo $p['merek_mbl'] ?></h6>
                 <p class="card-text"><?php echo substr_replace($p['desk_mbl'],"...",100); ?></p>
-                <a href="mobilpilih.php?id_mbl=<?php echo $p['id_mbl'] ?>" class="btn btn-primary">Lihat lebih lanjut</a>
+                <div class="card-footer text-center">
+                <a href="mobilpilih.php?id_mbl=<?php echo $p['id_mbl'] ?>" class="btn btn-primary glow-on-hover">Lihat lebih lanjut</a>
+                </div>
               </div>
             </div>
           </div>        

@@ -95,9 +95,9 @@ else {
       <div class="mt-4 mx-5 mb-5">
         <div class="row gx-5">
           <div class="col-5 my-auto">
-            <h1 class="revealUp">Lebih Hemat, Lebih Hebat</h1>
+            <h1 class="revealUp hover-1">Lebih Hemat, Lebih Hebat</h1>
             <p
-              class="mt-5 d-none d-sm-none d-md-block align-bottom"
+              class="mt-5 d-none d-sm-none d-md-block align-bottom fs-5"
               style="text-align: justify"
             >
               Kendaraan listrik merupakan pilihan terbaik untuk lebih hemat dan
@@ -108,13 +108,13 @@ else {
           </div>
           <div class="col-7">
             <img
-              class="img-fluid rounded"
+              class="img-fluid rounded hover-4 shadow-lg"
               src="https://awsimages.detik.net.id/community/media/visual/2020/02/10/a3506daf-3eda-440a-80a6-2804dc45a11e.jpeg?w=700&q=90"
             />
           </div>
         </div>
         <div class="row">
-          <p class="mt-5 d-block d-sm-block d-md-none">
+          <p class="mt-5 d-block d-sm-block d-md-none fs-5">
             Kendaraan listrik merupakan pilihan terbaik untuk lebih hemat dan
             melindungi lingkungan secara bersamaan. Anda dapat mengendarai mobil
             listrik tanpa harus khawatir tentang harga bahan bakar, atau berapa
@@ -123,12 +123,12 @@ else {
         </div>
         <div class="row gx-5 mt-5">
           <div class="col-5">
-            <img class="img-fluid rounded" src="./img/frontend/mobil2.jpg" />
+            <img class="img-fluid rounded hover-4" src="./img/frontend/mobil2.jpg" />
           </div>
           <div class="col-7 my-auto">
-            <h1 class="revealUp">Lebih Efisien, Lebih Efektif</h1>
+            <h1 class="revealUp hover-1">Lebih Efisien, Lebih Efektif</h1>
             <p
-              class="mt-5 d-none d-sm-none d-md-block align-bottom"
+              class="mt-5 d-none d-sm-none d-md-block align-bottom fs-5"
               style="text-align: justify"
             >
               Dunia telah berubah, dan inilah saatnya untuk bersiap-siap. Mobil
@@ -140,7 +140,7 @@ else {
           </div>
         </div>
         <div class="row">
-          <p class="mt-5 d-block d-sm-block d-md-none">
+          <p class="mt-5 d-block d-sm-block d-md-none fs-5">
             Dunia telah berubah, dan inilah saatnya untuk bersiap-siap. Mobil
             listrik adalah masa depan dan mereka telah hadir. Sekarang Anda tahu
             cara mengisi daya mobil listrik Anda saat Anda tidur di malam hari.
@@ -150,14 +150,14 @@ else {
       </div>
       <!-- maps -->
       <div class="text-center jarak_section">
-        <h1 class="my-4 mx-5">Perjalanan Jauh? Tidak Perlu Khawatir</h1>
+        <h1 class="my-4 mx-5 map-title">Perjalanan Jauh? Tidak Perlu Khawatir</h1>
         <iframe
           class="border-2 shadow-md"
           src="https://www.google.com/maps/d/u/0/embed?mid=1HWJwHpfbe3H3Uzv5a6F8fr-HvFpZWEA&ehbc=2E312F"
           width="100%"
           height="480"
         ></iframe>
-        <p class="my-md-4 my-2 mx-5">
+        <p class="my-md-4 my-2 mx-5 fs-5">
           Pemerintah telah menyiapkan fasilitas charging station yang telah
           tersebar di beberapa kota besar di Indonesia. Beberapa charging
           station juga telah mendung fitur fast charging untuk mengisi kendaraan
@@ -169,7 +169,7 @@ else {
       <!-- produk indo -->
       <div class="jarak_section text-center mx-5">
         <h1 class="my-4 mx-5">Indonesia Turut Hadir</h1>
-        <p class="mx-5">
+        <p class="mx-5 fs-5">
           Selain menyediakan fasilitas bagi konsumen kendaraan listrik, beberapa
           produsen kendaraan juga ikut meramaikan pasar kendaraan listrik dalam
           negeri. Produk kendaraan listrik Indonesia juga dapat bersaing secara
@@ -181,7 +181,7 @@ else {
           <div class="col">
             <a href="https://www.selis.co.id/">
               <div
-                class="card rounded border-2 shadow mb-4"
+                class="card rounded border-2 shadow mb-4 card-animate"
                 style="width: 18rem"
               >
                 <img
@@ -195,7 +195,7 @@ else {
           <div class="col">
             <a href="http://viarmotor.com/">
               <div
-                class="card rounded border-2 shadow mb-4"
+                class="card rounded border-2 shadow mb-4 card-animate"
                 style="width: 18rem; height: 18rem"
               >
                 <img
@@ -206,10 +206,10 @@ else {
               </div>
             </a>
           </div>
-          <div class="col">
+          <div class="col ">
             <a href="https://gesitsmotors.com/">
               <div
-                class="card rounded border-2 shadow mb-4"
+                class="card rounded border-2 shadow mb-4 card-animate"
                 style="width: 18rem"
               >
                 <img
@@ -223,7 +223,7 @@ else {
           <div class="col">
             <a href="https://charged.co.id/">
               <div
-                class="card rounded border-2 shadow mb-4"
+                class="card rounded border-2 shadow mb-4  card-animate"
                 style="width: 18rem; height: 18rem"
               >
                 <img
@@ -241,13 +241,13 @@ else {
       <div class="mx-5 jarak_section">
         <div class="row">
           <div class="col">
-            <h1 class="my-4">Banyak Untungnya</h1>
+            <h1 class="my-4 mb-5 untung">Banyak Untungnya</h1>
           </div>
           <div class="col"></div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <p>
+            <p class="home-title fs-5">
               Selain berperan dalam mengurangi pencemaran di lingkungan, dengan
               menggunakan kendaraan listrik, pengendara juga mendapatkan banyak
               keuntungan. Hal ini disebabkan dengan adanya dukungan dan peran
@@ -259,7 +259,7 @@ else {
             <div>
               <ul class="w-90">
                 <li>
-                  <div class="row align-items-center">
+                  <div class="row align-items-center font-membesar">
                     <div class="col-1">
                       <i>
                         <svg
@@ -277,12 +277,12 @@ else {
                       </i>
                     </div>
                     <div class="col-11">
-                      <h4>Pajak kendaraan yang lebih rendah</h4>
+                      <h3>Pajak kendaraan yang lebih rendah</h3>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="row gy-2 align-items-center">
+                  <div class="row gy-2 align-items-center font-membesar">
                     <div class="col-1">
                       <i>
                         <svg
@@ -300,12 +300,12 @@ else {
                       </i>
                     </div>
                     <div class="col-11">
-                      <h4>Bebas aturan ganjil genap</h4>
+                      <h3>Bebas aturan ganjil genap</h3>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="row gy-2 align-items-center">
+                  <div class="row gy-2 align-items-center font-membesar">
                     <div class="col-1">
                       <i>
                         <svg
@@ -323,12 +323,12 @@ else {
                       </i>
                     </div>
                     <div class="col-11">
-                      <h4>Biaya operasional lebih rendah</h4>
+                      <h3>Biaya operasional lebih rendah</h3>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="row gy-2 align-items-center">
+                  <div class="row gy-2 align-items-center font-membesar">
                     <div class="col-1">
                       <i>
                         <svg
@@ -346,12 +346,12 @@ else {
                       </i>
                     </div>
                     <div class="col-11">
-                      <h4>Hanya membutuhkan sedikit perawatan rutin</h4>
+                      <h3>Hanya membutuhkan sedikit perawatan rutin</h3>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="row gy-2 align-items-center">
+                  <div class="row gy-2 align-items-center font-membesar">
                     <div class="col-1">
                       <i>
                         <svg
@@ -369,7 +369,7 @@ else {
                       </i>
                     </div>
                     <div class="col-11">
-                      <h4>Memiliki sedikit fast moving parts</h4>
+                      <h3>Memiliki sedikit fast moving parts</h3>
                     </div>
                   </div>
                 </li>
@@ -380,8 +380,8 @@ else {
       </div>
       <!-- keuntungan -->
       <!-- pesan -->
-      <div class="bagian-pesan py-5 mt-5">
-        <p class="container text-start text-white">
+      <div class="bagian-pesan py-5 mt-5 bg-dark">
+        <p class="container text-start text-white fs-5">
           Electrive adalah website yang bertujuan untuk memberikan informasi dan
           mempromosikan produk kendaraan listrik serta fasilitas pendukung
           berupa charging station yang ada di Indonesia. Dengan adanya website
@@ -393,11 +393,13 @@ else {
         <div class="container">
           <div class="row align-items-start">
             <div class="col-4">
+            </div>
+            <div class="col-4 mx-auto">
               <form method="POST" action="">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label text-white"
+                  <p for="exampleInputEmail1" class="form-label text-white fs-5 text-center"
                     >Email
-                  </label>
+                  </p>
                   <input
                     type="email"
                     class="form-control"
@@ -407,10 +409,10 @@ else {
                   />
                 </div>
                 <div class="mb-3">
-                  <label
+                  <p
                     for="exampleInputPassword1"
-                    class="form-label text-white"
-                    >Pesan</label
+                    class="form-label text-white fs-5 text-center"
+                    >Pesan</
                   >
                   <input
                     type="text"
@@ -420,16 +422,18 @@ else {
                     style="height: 100px"
                   />
                 </div>
-                <button
+                <p class="text-center">
+                  <button
                   type="submit"
                   name="submit"
-                  class="btn btn-primary mb-3"
+                  class="btn btn-primary mb-3 px-4 py-2"
                 >
                   Kirim
-                </button>
+                  </button>
+                </p>
+                
               </form>
             </div>
-            <div class="col-4"></div>
             <div class="col-4"></div>
           </div>
         </div>

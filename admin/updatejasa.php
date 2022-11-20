@@ -17,7 +17,7 @@ if($_POST['id_jasa']){
 
 ?>
 
-<form method="post" action="" enctype="multipart/form-data" form="formupdatejasa">
+<form method="post" action="" enctype="multipart/form-data">
 <input type="hidden" name="id_jasa" value="<?php echo $update['id_jasa'];?>">
 <input type="hidden" name="gambarlama" value="<?php echo $update['gambar_jasa'];?>">
                 <div class="mb-3">
@@ -42,8 +42,8 @@ if($_POST['id_jasa']){
                     <input type="text" name="kontak_jasa" class="form-control" id="exampleInputPassword1" value="<?php echo $update['kontak_jasa'] ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Deskripsi</label>
-                    <textarea type="text" name="desk_jasa" class="fromupdatejasa" id="exampleInputPassword1" value="<?php echo $update['desk_jasa'] ?>"></textarea>
+                    <label for="exampleInputPassword1" class="form-label">Deskripsi Jasa</label>
+                    <input type="text" name="desk_jasa" class="form-control" id="formJasa" value="<?php echo $update['desk_jasa'] ?>"></input>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Status</label>
