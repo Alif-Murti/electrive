@@ -147,12 +147,12 @@ echo mysqli_error($conn);
             <div class="m-3">
               <img
                 src="../img/frontend/banner_jasa1.png"
-                class="rounded shadow"
+                class="img-fluid rounded shadow"
                 alt="jasa konversi"
               />
             </div>
           </div>
-          <div class="col-0 col-md-6 pe-5">
+          <div class="container-fluid col-0 col-md-6 pe-5">
             <form class="border-2" method="post" action="" enctype="multipart/form-data" form="tambahjasa">
               <h2 class="text-center">Ayo Dukung Indonesia Lebih Sehat</h2>
               <p class="my-4">
@@ -248,7 +248,7 @@ echo mysqli_error($conn);
         <div class="collapse" id="collapseExample">
           <div>
       <!-- card jasa -->
-      <div class="mx-5 my-5">
+      <div class="mx-lg-5 my-5">
         <div class="row justify-content-start gx-3">
           <?php
               $profile=mysqli_query($conn,"SELECT * from jasa where status_jasa=1");

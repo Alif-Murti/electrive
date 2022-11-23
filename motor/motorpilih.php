@@ -79,9 +79,9 @@ $id_mtr = $_GET['id_mtr'];
         <div class="col-xl-6">
           <img
             src="../img/motor/<?php echo $p['gambar_mtr'] ?>"
-            class="rounded shadow"
+            class="img-fluid rounded shadow"
             alt="..."
-            style="width: 600px; height: 500px; object-fit: cover"
+            style="object-fit: contain"
           />
         </div>
         <div class="col-xl-6">

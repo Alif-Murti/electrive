@@ -79,9 +79,9 @@ $id_mbl = $_GET['id_mbl'];
         <div class="col-xl-6">
           <img
             src="../img/mobil/<?php echo $p['gambar_mbl'] ?>"
-            class="rounded shadow"
+            class="img-fluid rounded shadow"
             alt="..."
-            style="width: 600px; height: 500px; object-fit: contain"
+            style="object-fit: contain"
           />
         </div>
         <div class="col-xl-6">

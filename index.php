@@ -93,11 +93,11 @@ else {
       </div>
       <!-- banner -->
       <div class="mt-4 mx-5 mb-5">
-        <div class="row gx-5">
-          <div class="col-5 my-auto">
+        <div class="row gx-2">
+          <div class="col-6 my-auto">
             <h1 class="revealUp hover-1">Lebih Hemat, Lebih Hebat</h1>
             <p
-              class="mt-5 d-none d-sm-none d-md-block align-bottom fs-5"
+              class="mt-5 d-none d-sm-none d-md-block align-bottom me-md-4 fs-5"
               style="text-align: justify"
             >
               Kendaraan listrik merupakan pilihan terbaik untuk lebih hemat dan
@@ -106,7 +106,7 @@ else {
               berapa biaya yang dibutuhkan untuk mengisi bahan bakar.
             </p>
           </div>
-          <div class="col-7">
+          <div class="col-6">
             <img
               class="img-fluid rounded hover-4 shadow-lg"
               src="https://awsimages.detik.net.id/community/media/visual/2020/02/10/a3506daf-3eda-440a-80a6-2804dc45a11e.jpeg?w=700&q=90"
@@ -121,7 +121,7 @@ else {
             biaya yang dibutuhkan untuk mengisi bahan bakar.
           </p>
         </div>
-        <div class="row gx-5 mt-5">
+        <div class="row gx-2 mt-5">
           <div class="col-5">
             <img class="img-fluid rounded hover-4" src="./img/frontend/mobil2.jpg" />
           </div>
@@ -150,14 +150,14 @@ else {
       </div>
       <!-- maps -->
       <div class="text-center jarak_section">
-        <h1 class="my-4 mx-5 map-title">Perjalanan Jauh? Tidak Perlu Khawatir</h1>
+        <h1 class="my-4 mx-lg-5 map-title">Perjalanan Jauh? Tidak Perlu Khawatir</h1>
         <iframe
           class="border-2 shadow-md"
           src="https://www.google.com/maps/d/u/0/embed?mid=1HWJwHpfbe3H3Uzv5a6F8fr-HvFpZWEA&ehbc=2E312F"
           width="100%"
           height="480"
         ></iframe>
-        <p class="my-md-4 my-2 mx-5 fs-5">
+        <p class="my-md-4 my-2 mx-lg-5 fs-5">
           Pemerintah telah menyiapkan fasilitas charging station yang telah
           tersebar di beberapa kota besar di Indonesia. Beberapa charging
           station juga telah mendung fitur fast charging untuk mengisi kendaraan
@@ -167,9 +167,9 @@ else {
       </div>
       <!-- maps -->
       <!-- produk indo -->
-      <div class="jarak_section text-center mx-5">
-        <h1 class="my-4 mx-5">Indonesia Turut Hadir</h1>
-        <p class="mx-5 fs-5">
+      <div class="text-center mx-5">
+        <h1 class="my-4 mx-lg-5">Indonesia Turut Hadir</h1>
+        <p class="mx-lg-5 fs-5">
           Selain menyediakan fasilitas bagi konsumen kendaraan listrik, beberapa
           produsen kendaraan juga ikut meramaikan pasar kendaraan listrik dalam
           negeri. Produk kendaraan listrik Indonesia juga dapat bersaing secara
@@ -177,7 +177,7 @@ else {
           bekerja sama dengan layanan transportasi umum seperti Gojek dan
           layanan logistik seperti Si Cepat.
         </p>
-        <div class="row gx-5 gx-md-0">
+        <div class="row justify-content-center">
           <div class="col">
             <a href="https://www.selis.co.id/">
               <div
@@ -238,10 +238,10 @@ else {
       </div>
       <!-- produk indo -->
       <!-- keuntungan -->
-      <div class="mx-5 jarak_section">
+      <div class="container-fluid mt-5">
         <div class="row">
           <div class="col">
-            <h1 class="my-4 mb-5 untung">Banyak Untungnya</h1>
+            <h1 class="my-4 untung">Banyak Untungnya</h1>
           </div>
           <div class="col"></div>
         </div>
@@ -277,7 +277,7 @@ else {
                       </i>
                     </div>
                     <div class="col-11">
-                      <h3>Pajak kendaraan yang lebih rendah</h3>
+                      <h3>Pajak yang lebih rendah</h3>
                     </div>
                   </div>
                 </li>
@@ -390,14 +390,14 @@ else {
           Sampaikan pesanmu kepada kami melalui form di bawah ini mengenai kesan
           kamu saat mengunjungi website ini.
         </p>
-        <div class="container">
+        <div class="container-fluid">
           <div class="row align-items-start">
-            <div class="col-4">
+            <div class="col-0 col-lg-4">
             </div>
-            <div class="col-4 mx-auto">
+            <div class="col-12 col-lg-5 mx-auto">
               <form method="POST" action="">
                 <div class="mb-3">
-                  <p for="exampleInputEmail1" class="form-label text-white fs-5 text-center"
+                  <p for="exampleInputEmail1" class="form-label text-white fs-5 fw-bold"
                     >Email
                   </p>
                   <input
@@ -411,7 +411,7 @@ else {
                 <div class="mb-3">
                   <p
                     for="exampleInputPassword1"
-                    class="form-label text-white fs-5 text-center"
+                    class="form-label text-white fs-5 fw-bold"
                     >Pesan</
                   >
                   <input
@@ -434,7 +434,7 @@ else {
                 
               </form>
             </div>
-            <div class="col-4"></div>
+            <div class="col-0 col-lg-12"></div>
           </div>
         </div>
       </div>
@@ -463,10 +463,12 @@ else {
       <!-- footer -->
       <div class="bg-dark mb-n4">
         <div class="text-center">
-          <img
+          <a href="./admin/">
+            <img
             style="width: 200px; height: 100px; object-fit: cover"
             src="./img/frontend/logo2.png"
           />
+          </a>
           <h5 class="mb-3 fw-bold text-light">Stay In Touch With Us</h5>
           <div class="mb-5">
             <a>

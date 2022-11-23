@@ -80,7 +80,7 @@ $id_spklu = $_GET['id_spklu'];
           <div class="mapouter">
       <div class="gmap_canvas">
         <iframe
-        class="rounded shadow"
+        class="img-fluid rounded shadow"
         style="width: 600px;height:500px"
           src="https://maps.google.com/maps?q=<?php echo $p['latitude'] ?>,<?php echo $p['longitude'] ?>&hl=es;z=14&amp;output=embed"
         ></iframe>

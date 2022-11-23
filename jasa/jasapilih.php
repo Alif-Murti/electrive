@@ -79,9 +79,9 @@ $id_jasa = $_GET['id_jasa'];
         <div class="col-xl-6">
           <img
             src="../img/jasa/<?php echo $p['gambar_jasa'] ?>"
-            class="rounded shadow"
+            class="img-fluid rounded shadow"
             alt="..."
-            style="width: 600px; height: 500px; object-fit: cover"
+            style="width: 600px; height: 500px; object-fit: contain"
           />
         </div>
         <div class="col-xl-6">
@@ -110,7 +110,7 @@ $id_jasa = $_GET['id_jasa'];
           </div>
           <div class="mt-3">
             <div class="card-body">
-              <h5 class="card-title">Deskripsi Mobil</h5>
+              <h5 class="card-title">Deskripsi Jasa</h5>
               <p class="card-text"><p><?php echo $p['desk_jasa'] ?></p></p>
             </div>
           </div>
