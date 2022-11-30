@@ -59,7 +59,7 @@ include "../koneksi.php"
                   <a class="nav-link" href="../mobil/">Mobil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../jasa/">Konversi</a>
+                  <a class="nav-link" href="../jasa/">Jasa Konversi</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./">Charging Station</a>
@@ -84,10 +84,8 @@ include "../koneksi.php"
         <h3 class="text-center mb-5">Temukan Charging Station Terdekat di Kotamu</h3>
         <div class="mx-auto">
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1"
-            >Masukan kata kunci berupa kota atau alamat</span
-          >
             <input
+            placeholder="Masukan kata kunci berupa kota atau alamat"
              id="searchbar"
               name="search"
               onkeyup="search_spklu()"

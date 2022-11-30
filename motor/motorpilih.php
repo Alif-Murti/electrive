@@ -63,7 +63,7 @@ $id_mtr = $_GET['id_mtr'];
                 <a class="nav-link" href="../mobil/">Mobil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../jasa/">Konversi</a>
+                <a class="nav-link" href="../jasa/">Jasa Konversi</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../spklu/">Charging Station</a>
@@ -113,7 +113,18 @@ $id_mtr = $_GET['id_mtr'];
                   <th>Harga Motor :</th>
                   <td><h5><?php echo $p['harga_mtr'] ?></h5></td>
                 </tr>
+                <tr>
+                  <th>Pembelian :</th>
+                  <td>
+                    <a href="<?php echo $p['situs_mtr'] ?>" class="btn btn-light">
+                      <img class="img-fluid" style="max-width: 100px;" src="../img/frontend/button_blibli.png"/>
+                    </a>
+                  </td>
+                </tr>
               </table>
+              <div class="text-center">
+                
+              </div>
             </div>
           </div>
           <div class="mt-3">
@@ -122,7 +133,6 @@ $id_mtr = $_GET['id_mtr'];
               <p class="card-text"><p><?php echo $p['desk_mtr'] ?></p></p>
             </div>
           </div>
-        </div>
         <?php
       }
       ?>

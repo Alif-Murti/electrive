@@ -129,7 +129,7 @@ echo mysqli_error($conn);
                   <a class="nav-link" href="../mobil/">Mobil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./">Konversi</a>
+                  <a class="nav-link" href="./">Jasa Konversi</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../spklu/">Charging Station</a>

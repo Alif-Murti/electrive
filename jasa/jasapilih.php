@@ -63,7 +63,7 @@ $id_jasa = $_GET['id_jasa'];
                 <a class="nav-link" href="../mobil/">Mobil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../jasa/">Konversi</a>
+                <a class="nav-link" href="../jasa/">Jasa Konversi</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../spklu/">Charging Station</a>

@@ -64,7 +64,9 @@
         $desk_jasa = $_POST['desk_jasa'];
         $status_jasa = $_POST['status_jasa'];
 			  
-		$tambahjasa = mysqli_query($conn,"insert into jasa values('','$nama_jasa','$penyedia_jasa','$gambar',' $alamat_jasa','$kontak_jasa','$desk_jasa','$status_jasa')");
+		$tambahjasa = mysqli_query($conn,"insert into jasa 
+        (nama_jasa,penyedia_jasa,gambar_jasa,alamat_jasa,kontak_jasa,desk_jasa,status_jasa) 
+        values('$nama_jasa','$penyedia_jasa','$gambar',' $alamat_jasa','$kontak_jasa','$desk_jasa','$status_jasa')");
 		if ($tambahjasa){
 		echo " <div class='alert alert-success'>
 			Berhasil menambahkan Artikel baru.
@@ -255,9 +257,9 @@ echo mysqli_error($conn);
 													<td><?php echo $p['nama_jasa'] ?></td>
 													<td><?php echo $p['penyedia_jasa'] ?></td>
                                                     <td><img src="../img/jasa/<?php echo $p['gambar_jasa']?>" alt="" width="100" height="100"></td>
-                                                    <td><?php echo $p['alamat_jasa'] ?></td>
+                                                    <td><?php echo substr_replace($p['alamat_jasa'],"...",50); ?></td>
                                                     <td><?php echo $p['kontak_jasa'] ?></td>
-                                                    <td><?php echo $p['desk_jasa'] ?></td>
+                                                    <td><?php echo substr_replace($p['desk_jasa'],"...",50); ?></td>
                                                     <td><?php echo $p['status_jasa'] ?></td>
 												</tr>		
 												<?php 
@@ -281,7 +283,7 @@ echo mysqli_error($conn);
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>Kophistory Admin Pane</p>
+                <p>ELECTRIVE</p>
             </div>
         </footer>
         <!-- footer area end-->

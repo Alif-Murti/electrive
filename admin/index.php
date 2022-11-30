@@ -216,7 +216,7 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>Plat Biru Admin Pane</p>
+                <p>ELECTRIVE</p>
             </div>
         </footer>
         <!-- footer area end-->

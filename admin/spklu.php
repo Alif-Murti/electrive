@@ -62,7 +62,9 @@
         $latitude = $_POST['latitude'];
         $longitude = $_POST['longitude'];
 			  
-		$tambahspklu = mysqli_query($conn,"insert into specialty values('','$nama_spklu','$kota','$alamat','$latitude','$longitude')");
+		$tambahspklu = mysqli_query($conn,"insert into spklu 
+        (nama_spklu,kota,alamat,latitude,longitude) 
+        values('$nama_spklu','$kota','$alamat','$latitude','$longitude')");
 		if ($tambahspklu){
 		echo " <div class='alert alert-success'>
 			Berhasil menambahkan SPKLU baru.
@@ -75,40 +77,6 @@
 		}
 		
 	};
-    // if(isset($_POST['update']))
-	// {
-    //     $id_spec = $_POST['id_spec'];
-	// 	$nama_spec = $_POST['nama_spec'];
-	// 	$tempat_spec = $_POST['tempat_spec'];
-    //     $rasa_spec = $_POST['rasa_spec'];
-    //     $gambar = upload(); 
-    //     $gambar_lama = $_POST['gambar_lama'];
-    
-    //     if ( $_FILES['gambar']['error'] === 4 ) {
-    //         $gambar = $gambar_lama;
-    //     } else {
-    //         $gambar = upload();
-    //     }
-
-
-			  
-	// 	$updatespec = mysqli_query($conn,"update specialty SET 
-    //                                     nama_spec='$nama_spec',
-    //                                     tempat_spec='$tempat_spec',
-    //                                     rasa_spec='$rasa_spec',
-    //                                     gambar_spec='$gambar' where id_spec='$id_spec'");
-	// 	if ($updatespec){
-    //         echo ("<script> 
-    //         alert ('Success to update data');
-    //     </script>");
-		
-	// 	} else { echo ("<script> 
-    //         alert ('Failed to update data');
-    //     </script>");
-    //     echo mysqli_error($conn);
-		 
-	// 	}
-	// }
 	?>
 
 <!doctype html>
@@ -275,7 +243,7 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>Kophistory Admin Pane</p>
+                <p>ELECTRIVE</p>
             </div>
         </footer>
         <!-- footer area end-->

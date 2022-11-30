@@ -50,6 +50,10 @@ if($_POST['id_mtr']){
                     <input type="text" name="harga_mtr" class="form-control" id="exampleInputPassword1" value="<?php echo $update['harga_mtr'] ?>">
                 </div>
                 <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Link Marketplace</label>
+                    <input type="text" name="situs_mtr" class="form-control" id="exampleInputPassword1" value="<?php echo $update['situs_mtr'] ?>">
+                </div>
+                <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Deskripsi Motor</label>
                     <input type="textarea" name="desk_mtr" class="form-control" id="exampleInputPassword1" value="<?php echo $update['desk_mtr'] ?>">
                 </div>

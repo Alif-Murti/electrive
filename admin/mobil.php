@@ -66,9 +66,12 @@
         $daya = $_POST['daya_mbl'];
         $torsi = $_POST['torsi_mbl'];
         $harga = $_POST['harga_mbl'];
+        $situs = $_POST['situs_mbl'];
         $deskripsi = $_POST['desk_mbl'];
 			  
-		$tambahmobil = mysqli_query($conn,"insert into mobil values('','$merek','$tipe','$jenis','$gambar','$kapasitas',' $baterai','$jt_mbl','$daya','$torsi','$harga','$deskripsi')");
+		$tambahmobil = mysqli_query($conn,"insert into mobil 
+        (merek_mbl,tipe_mbl,jenis_mbl,gambar_mbl,kapasitas_mbl,baterai_mbl,jt_mbl,daya_mbl,torsi_mbl,harga_mbl,situs_mbl,desk_mbl) 
+        values('$merek','$tipe','$jenis','$gambar','$kapasitas',' $baterai','$jt_mbl','$daya','$torsi','$harga','$situs','$deskripsi')");
 		if ($tambahmobil){
 		echo " <div class='alert alert-success'>
 			Berhasil menambahkan Artikel baru.
@@ -92,6 +95,7 @@ echo mysqli_error($conn);
         $daya = $_POST['daya_mbl'];
         $torsi = $_POST['torsi_mbl'];
         $harga = $_POST['harga_mbl'];
+        $situs = $_POST['situs_mbl'];
         $deskripsi = $_POST['desk_mbl'];
 
         if ( $_FILES['gambar_mbl']['error'] === 4 ) {
@@ -111,6 +115,7 @@ echo mysqli_error($conn);
                                         daya_mbl='$daya',
                                         torsi_mbl='$torsi',
                                         harga_mbl='$harga',
+                                        situs_mbl='$situs',
                                         desk_mbl='$deskripsi' 
                                         where id_mbl='$id_mbl' ");
 		if ($updatemobil){
@@ -255,10 +260,11 @@ echo mysqli_error($conn);
                                                 <th>Daya</th>
                                                 <th>Torsi</th>
                                                 <th>Harga</th>
+                                                <th>Link Marketplace</th>
                                                 <th>Deskripsi</th>
 											</tr></thead><tbody>
 											<?php 
-											$brgs=mysqli_query($conn,"SELECT id_mbl, merek_mbl, tipe_mbl, jenis_mbl, gambar_mbl, kapasitas_mbl, baterai_mbl, jt_mbl, daya_mbl, torsi_mbl, harga_mbl, desk_mbl FROM mobil;");
+											$brgs=mysqli_query($conn,"SELECT id_mbl, merek_mbl, tipe_mbl, jenis_mbl, gambar_mbl, kapasitas_mbl, baterai_mbl, jt_mbl, daya_mbl, torsi_mbl, harga_mbl, situs_mbl, desk_mbl FROM mobil;");
 											$no=1;
 											while($p=mysqli_fetch_array($brgs)){
 
@@ -278,6 +284,7 @@ echo mysqli_error($conn);
                                                     <td><?php echo $p['daya_mbl'] ?></td>
                                                     <td><?php echo $p['torsi_mbl'] ?></td>
                                                     <td><?php echo $p['harga_mbl'] ?></td>
+                                                    <td><?php echo $p['situs_mbl'] ?></td>
                                                     <td><?php echo $p['desk_mbl'] ?></td>
 												</tr>		
 												
@@ -303,7 +310,7 @@ echo mysqli_error($conn);
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>Kophistory Admin Pane</p>
+                <p>ELECTRIVE</p>
             </div>
         </footer>
         <!-- footer area end-->
@@ -359,6 +366,10 @@ echo mysqli_error($conn);
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Harga Mobil</label>
                     <input type="text" name="harga_mbl" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Link</label>
+                    <input type="text" name="situs_mbl" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Deskripsi Mobil</label>

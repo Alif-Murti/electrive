@@ -59,7 +59,7 @@ include "../koneksi.php"
                   <a class="nav-link" href="./">Mobil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../jasa/">Konversi</a>
+                  <a class="nav-link" href="../jasa/">Jasa Konversi</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../spklu/">Charging Station</a>
@@ -83,10 +83,8 @@ include "../koneksi.php"
       <!-- search bar -->
       <div class="mx-5 mx-md-banner mt-5">
         <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1"
-            >Cari Mobil Yang Kamu Suka</span
-          >
           <input
+          placeholder="Cari Mobil Yang Kamu Suka"
            id="searchbar"
           name="search"
           onkeyup="search_mobillistrik()"

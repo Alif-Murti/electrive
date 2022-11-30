@@ -63,9 +63,12 @@
         $maks = $_POST['maks_mtr'];
         $jt = $_POST['jt_mtr'];
         $harga = $_POST['harga_mtr'];
+        $situs = $_POST['situs_mtr'];
         $deskripsi = $_POST['desk_mtr'];
 			  
-		$tambahmotor = mysqli_query($conn,"insert into motor values('','$merek','$tipe','$gambar',' $baterai','$maks','$jt','$harga','$deskripsi')");
+		$tambahmotor = mysqli_query($conn,"insert into motor 
+        (merek_mtr,tipe_mtr,gambar_mtr,baterai_mtr,maks_mtr,jt_mtr,harga_mtr,situs_mtr,desk_mtr) 
+        values('$merek','$tipe','$gambar',' $baterai','$maks','$jt','$harga','$situs','$deskripsi')");
 		if ($tambahmotor){
 		echo " <div class='alert alert-success'>
 			Berhasil menambahkan Artikel baru.
@@ -86,6 +89,7 @@ echo mysqli_error($conn);
         $maks = $_POST['maks_mtr'];
         $jt = $_POST['jt_mtr'];
         $harga = $_POST['harga_mtr'];
+        $situs = $_POST['situs_mtr'];
         $deskripsi = $_POST['desk_mtr'];
 
         if ( $_FILES['gambar_mtr']['error'] === 4 ) {
@@ -102,6 +106,7 @@ echo mysqli_error($conn);
                                         maks_mtr='$maks',
                                         jt_mtr='$jt',
                                         harga_mtr='$harga',
+                                        situs_mtr='$situs',
                                         desk_mtr='$deskripsi' 
                                         where id_mtr='$id_mtr' ");
 		if ($updatemotor){
@@ -243,10 +248,11 @@ echo mysqli_error($conn);
                                                 <th>Kecepatan Maksimal</th>
                                                 <th>Jarak Tempuh</th>
                                                 <th>Harga</th>
+                                                <th>Link Marketplace</th>
                                                 <th>Deskripsi</th>
 											</tr></thead><tbody>
 											<?php 
-											$brgs=mysqli_query($conn,"SELECT id_mtr, merek_mtr, tipe_mtr, gambar_mtr, baterai_mtr, maks_mtr, jt_mtr, harga_mtr, desk_mtr FROM motor;");
+											$brgs=mysqli_query($conn,"SELECT id_mtr, merek_mtr, tipe_mtr, gambar_mtr, baterai_mtr, maks_mtr, jt_mtr, harga_mtr, situs_mtr, desk_mtr FROM motor;");
 											$no=1;
 											while($p=mysqli_fetch_array($brgs)){
 
@@ -263,6 +269,7 @@ echo mysqli_error($conn);
                                                     <td><?php echo $p['maks_mtr'] ?></td>
                                                     <td><?php echo $p['jt_mtr'] ?></td>
                                                     <td><?php echo $p['harga_mtr'] ?></td>
+                                                    <td><?php echo $p['situs_mtr'] ?></td>
                                                     <td><?php echo $p['desk_mtr'] ?></td>
 												</tr>		
 												
@@ -288,7 +295,7 @@ echo mysqli_error($conn);
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>Kophistory Admin Pane</p>
+                <p>ELECTRIVE</p>
             </div>
         </footer>
         <!-- footer area end-->
@@ -332,6 +339,10 @@ echo mysqli_error($conn);
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Harga</label>
                     <input type="text" name="harga_mtr" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Link Marketplace</label>
+                    <input type="text" name="situs_mtr" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Deskripsi</label>
